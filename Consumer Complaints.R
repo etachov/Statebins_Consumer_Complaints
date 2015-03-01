@@ -2,7 +2,7 @@ library(dplyr) #data manipulatione
 library(lubridate) #dealing with daes
 library(statebins) # for our binmaps
 
-## read in a csv of CFPB complaints data on various financial products. in the future connect to API.
+## read in a csv of CFPB complaints data on various financial products. In the future connect to API.
 complaints <- read.csv("Consumer_Complaints.csv", header = TRUE, stringsAsFactors = FALSE)
 
 ## convert date strings to date format and add a year variable
@@ -61,4 +61,4 @@ mortgage_bins <- statebins(mortgage_2013_f,
                                                 vjust = 0,
                                                 face = "bold")) 
 ## print our chart
-ggsave("mortgage_bins.pdf", mortgage_bins)
+ggsave("mortgage_bins.png", mortgage_bins)
