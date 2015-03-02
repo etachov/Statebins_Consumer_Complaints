@@ -55,10 +55,12 @@ mortgage_bins <- statebins(mortgage_2013_f,
                 font_size = 6, 
                 legend_title = "Mortgage Complaints per Capita by State - 2013",
                 legend_position = "bottom") +
-                labs(title = "CFPB Complaints 2013 Per Capita") +
+                labs(title = "CFPB Mortgage Complaints 2013 Per Capita") +
                 theme(plot.title = element_text(size = 30,
                                                 hjust = 0,
                                                 vjust = 0,
                                                 face = "bold")) 
+
+mortgage_bins
 ## print our chart
 ggsave("mortgage_bins.png", mortgage_bins)
