@@ -1,4 +1,4 @@
-# Statebins_Consumer_Complaints
+# Statebins Consumer Complaints
 Visualizing Consumer Financial Protection Bureau complaints using the statebins R package. 
 
 Data source: http://catalog.data.gov/dataset/consumer-complaint-database
